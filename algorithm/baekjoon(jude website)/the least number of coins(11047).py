@@ -16,3 +16,20 @@ while K != 0:
             counter = counter + (a)
             K = K - (a*i)
 print(counter)
+
+# Solution
+N, K = map(int, input().split())
+lis = [0]*N
+counter = 0 
+
+for i in range(N):
+    lis[i] = int(input())
+    
+for i in reversed(lis):
+    
+    if i <= K:
+        counter = counter + int(K/i)
+        K = K % i
+        counter
+        
+print(counter)
