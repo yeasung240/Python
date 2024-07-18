@@ -1,0 +1,5 @@
+N = int(input())
+lis = list(map(int, input().split()))
+MAX = max(lis)
+SUM = sum(lis) 
+print(SUM*100/N/MAX)
