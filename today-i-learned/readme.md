@@ -1,36 +1,6 @@
-제목: 99클럽 코테 스터디 1일차 TIL + 2차 배열
+[1일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%EC%8A%A4%ED%84%B0%EB%94%94%201%EC%9D%BC%EC%B0%A8%20TIL%20%2B%202%EC%B0%A8%20%EB%B0%B0%EC%97%B4.md)
 
 [2일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%EC%8A%A4%ED%84%B0%EB%94%94%202%EC%9D%BC%EC%B0%A8%20TIL%20%2B%20%EB%B0%B0%EC%97%B4.md)
 
 [3일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%EC%8A%A4%ED%84%B0%EB%94%94%203%EC%9D%BC%EC%B0%A8%20TIL%20%2B%20%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%82%B4%20%EB%A7%88%EC%9D%8C%EB%8C%80%EB%A1%9C%20%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0.md)
 
-1. 오늘의 학습 키워드
-
-    2차원 배열 문제, 수식, 역추적
-
-2. 공부한 내용 본인의 언어로 정리하기
-
-    2차원 배열문제라고 꼭 2차원 배열을 만드는 문제와 관련있지는 않다. 수학적 수식으로 문제를 풀어내야 할 때가 있다. 
-   
-3. 오늘의 회고
-
-    처음 문제를 풀어 나갈 때 되게 막막 했는데 3중 for문을 작성하면서 시간복잡도에 걸리게 되었고 시간 복잡도를 단순화 하게 만드는 법을 생각 할 수 없었다. 
-
-4. 어떤 문제가 있었고, 나는 어떤 시도를 했는지
-
-    먼저 처음 문제에서 주어진 배열 모양 그대로 만드는데 되게 어려움을 겪었다. 그래서 먼저 가장 큰 수로 모든 배열을 채우고 다음수로 채우는 방식을 사용하였다. 
-
-5. 어떻게 해결했는지
-
-    결국 질문지들을 보면서 문제들을 해결하였다. 
-
-6. 무엇을 새롭게 알았는지
-
-    수식으로 새롭게 나타내는 방법을 알게 되었다. 
-
-7. 내일 학습할 것은 무엇인지
-
-    내일은 내일 새로운 문제를 나온것을 중점으로 공부할 것이다. 
-
-
- #99클럽 #코딩테스트 준비 #개발자 취업 #항해99 #TIL
