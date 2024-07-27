@@ -1,9 +1,9 @@
-[문제]
+[문제](https://school.programmers.co.kr/learn/courses/30/lessons/42578)
 
   
 
-  권장 시간 : 
-  풀이 시간 : 
+  권장 시간 : 30분
+  풀이 시간 : 풀지못함 
 
 최종코드
 
