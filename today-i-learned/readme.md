@@ -12,6 +12,6 @@
 
 [7일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%EC%8A%A4%ED%84%B0%EB%94%94%207%EC%9D%BC%EC%B0%A8%20%2B%20%ED%95%98%EB%85%B8%EC%9D%B4%EC%9D%98%20%ED%83%91.md)
 
-[8일차]()
+[8일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%EC%8A%A4%ED%84%B0%EB%94%94%208%EC%9D%BC%EC%B0%A8%20%2B%20%EA%B8%B0%EB%8A%A5%EA%B0%9C%EB%B0%9C.md)
 
-[9일차]()
+[9일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%EC%8A%A4%ED%84%B0%EB%94%94%209%EC%9D%BC%EC%B0%A8%20%2B%20%EB%8D%94%20%EB%A7%B5%EA%B2%8C.md)
