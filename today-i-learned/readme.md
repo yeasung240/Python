@@ -23,3 +23,5 @@
 [12일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%20%EC%8A%A4%ED%84%B0%EB%94%94%2012%EC%9D%BC%EC%B0%A8%20%2B%20h%20index.md)
 
 [13일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%EC%8A%A4%ED%84%B0%EB%94%94%2013%EC%9D%BC%EC%B0%A8%20%2B%20%EC%B9%B4%EB%93%9C%EA%B2%8C%EC%9E%84)
+
+[14일차](https://github.com/yeasung240/Python/blob/main/today-i-learned/hanghae99-coding-study/99%ED%81%B4%EB%9F%BD%20%EC%BD%94%ED%85%8C%20%EC%8A%A4%ED%84%B0%EB%94%94%2014%EC%9D%BC%EC%B0%A8%20+%20%EC%88%AB%EC%9E%90%20%EC%B9%B4%EB%93%9C%202.md
