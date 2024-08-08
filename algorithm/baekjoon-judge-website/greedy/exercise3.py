@@ -1,4 +1,5 @@
 # Greedy Algoritm, finding the least number of coins. 
+# baekjoon (11047)
 # 1st try
 N, K = map(int, input().split())
 lis = [0]*N
@@ -18,6 +19,8 @@ while K != 0:
 print(counter)
 
 # Solution
+# Use the reversed range 
+
 N, K = map(int, input().split())
 lis = [0]*N
 counter = 0 

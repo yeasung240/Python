@@ -1,3 +1,4 @@
+# baekjoon 30(10610)
 # multiple of 3 is the sum of all digit should be multiple of 3
 # multiple of 10 is the last digit is 0 
 

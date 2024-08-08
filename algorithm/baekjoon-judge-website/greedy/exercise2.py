@@ -1,3 +1,5 @@
+# baekjoon 2875 (intern or competition)
+
 N, M, K = map(int, input().split())
 
 for i in range(K):
