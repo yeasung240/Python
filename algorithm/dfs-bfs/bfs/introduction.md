@@ -54,37 +54,41 @@ bfs(graph, 1, visited)
 > 
 ```python
 from collections import deque
-    N, M, Start = map(int, input().split())
-    A = [[] for _ in range(N+1)]
-    visited = [0] * (N+1)
-    
-    for _ in range(M): # Making graph list. 
-        s,e = map(int, input().split())
-        A[s].append(e)
-        A[e].append(s)
-        
-    for i in range(N+1): # The data is random -> sort the data
-        A[i].sort()
-    
-    def dfs(v):
-        print(v, end = ' ')
-        visited[v] = True
-        for i in A[v]:
-            if not visted[i]:
-                dfs(i)
-                # Going forward by using recursive character
+N, M, V = map(int, input().split())
+graph = [[] for _ in range(N+1)]
+visited1 = [False] * (N+1)
+visited2 = [False] * (N+1)
 
-    def bfs(v):
-        queue = deque()
-        queue.append(v)
-        visited[v] = True
-        
-        while queue:
-            a = queue.popleft()
-            print(a, end = ' ')
-            for i in A[a]:
-                if not visited[i]:
-                    queue.append(i) # append all the data.
-                    visited[i] = True
+for i in range(M):
+    S, E = map(int, input().split())
+    graph[S].append(E)
+    graph[E].append(S)
+for i in graph:
+    i.sort()
+
+def DFS(v):
+    
+    visited1[v] = True
+    print(v, end = ' ')
+    for i in graph[v]:
+        if not visited1[i]:
+            DFS(i)
+DFS(V) 
+print()
+
+def BFS(v):
+    
+    visited2[v] = True
+    queue = deque()
+    queue.append(v)
+    while queue:
+        value = queue.popleft()
+        print(value, end = ' ')
+        for i in graph[value]:
+            if not visited2[i]:
+                queue.append(i)
+                visited2[i] = True
+BFS(V)
+  
                        
 ```
