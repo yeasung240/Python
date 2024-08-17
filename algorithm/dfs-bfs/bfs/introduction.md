@@ -1,4 +1,12 @@
-1. What is BFS
+# What is BFS
+Breadth-First-Search
+
+* BFS means Breadth-First-Search and it searches the closest nodes firstly in the graph.
+* BFS uses Queue data strucuture.
+1. Input start doe on the queue and mark it is visited
+2. Popleft the node and input all the cloest nodes that are not visited. After that, mark these are visited
+3. Repeat second process until we don't have any data on the queue. 
+   
 
 ```python
 
