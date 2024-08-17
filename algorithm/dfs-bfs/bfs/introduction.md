@@ -50,3 +50,41 @@ bfs(graph, 1, visited)
 
 ```
 
+> BFS and DFS code in a different way. 
+> 
+```python
+from collections import deque
+    N, M, Start = map(int, input().split())
+    A = [[] for _ in range(N+1)]
+    visited = [0] * (N+1)
+    
+    for _ in range(M): # Making graph list. 
+        s,e = map(int, input().split())
+        A[s].append(e)
+        A[e].append(s)
+        
+    for i in range(N+1): # The data is random -> sort the data
+        A[i].sort()
+    
+    def dfs(v):
+        print(v, end = ' ')
+        visited[v] = True
+        for i in A[v]:
+            if not visted[i]:
+                dfs(i)
+                # Going forward by using recursive character
+
+    def bfs(v):
+        queue = deque()
+        queue.append(v)
+        visited[v] = True
+        
+        while queue:
+            a = queue.popleft()
+            print(a, end = ' ')
+            for i in A[a]:
+                if not visited[i]:
+                    queue.append(i) # append all the data.
+                    visited[i] = True
+                       
+```
