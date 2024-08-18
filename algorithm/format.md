@@ -8,7 +8,7 @@ Difficulty :
 
 #### Input
 
-T
+
 
 #### Output
 
