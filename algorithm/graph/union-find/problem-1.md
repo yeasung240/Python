@@ -35,6 +35,7 @@ $b$If it is included in the same set, print " YES" or " yes", otherwise print " 
 
 
 >**IDEA**
+
 Union Find concept. 
 
 >**How I solve it**
