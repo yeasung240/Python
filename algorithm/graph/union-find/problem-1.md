@@ -41,7 +41,6 @@ Union Find concept.
 >**How I solve it**
 
 ```python
-# union find
 import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(100000)
@@ -53,7 +52,7 @@ def find(a):
     if a == parent[a]:
         return a
     else:
-        parent[a] = find(parent[a])  # Recursive function form -> compress the paths.
+        parent[a] = find(parent[a])  # 재귀 형태로 구현 -> 경로 압축 부분
         return parent[a]
 
 
@@ -61,7 +60,11 @@ def union(a, b):
     a = find(a)
     b = find(b)
     if a != b:
-        parent[b] = a
+        if a < b:
+            parent[b] = a
+        elif b < a:
+            parent[a] = b
+        
 
 
 def checkSame(a, b):
@@ -84,7 +87,4 @@ for i in range(M):
             print("YES")
         else:
             print("NO")
-
-
 ```
-
