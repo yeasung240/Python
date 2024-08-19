@@ -26,6 +26,8 @@ Print the answer to the problem on the first line.
 >**IDEA**
 
 >**How I solve it**
+>
+>
 [Reference](https://docs.google.com/spreadsheets/d/1vNCCjiA2HO7fTvG39NW_8TEyJ1D36bdJVo2eGP62eao/edit?usp=sharing)
 ```python
 
