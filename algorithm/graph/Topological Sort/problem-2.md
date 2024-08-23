@@ -21,7 +21,9 @@ Print the minimum time it takes for each of N buildings to be completed.
 
 >**IDEA**
 
-Based on -1, make the list. 
+* Make all necessary lists based on -1 and for loop that starts from 1 to N-1. 
+* We use math.max function because the total time can be shown more than 1 time from each node. 
+* We add up the time of each node at the last point without using weight in graph.
 
 
 >**How I solve it**
@@ -31,20 +33,20 @@ from collections import deque
 
 N = int(input())
 A = [[] for _ in range(N + 1)]
-indegree = [0] * (N + 1)  # 진입차수 리스트
-selfBuild = [0] * (N + 1)  # 자기자신을 짓는데 걸리는 시간
+indegree = [0] * (N + 1) 
+selfBuild = [0] * (N + 1)  
 
 for i in range(1, N + 1):
     inputList = list(map(int, input().split()))
-    selfBuild[i] = (inputList[0])  # 건물을 짓는데 걸리는 시간
+    selfBuild[i] = (inputList[0])  
     index = 1
-    while True:  # 인접리스트 만들기
+    while True:  
         preTemp = inputList[index]
         index += 1
         if preTemp == -1:
             break
         A[preTemp].append(i)
-        indegree[i] += 1  # 진입차수 데이터 저장
+        indegree[i] += 1  
 
 queue = deque()
 for i in range(1, N + 1):
@@ -52,7 +54,7 @@ for i in range(1, N + 1):
         queue.append(i)
 
 result = [0] * (N + 1)
-while queue:  # 위상정렬 수행
+while queue:  # Topological sort
     now = queue.popleft()
     for next in A[now]:
         indegree[next] -= 1

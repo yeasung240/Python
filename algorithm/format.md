@@ -21,7 +21,6 @@ Difficulty :
 
 ```python
 
-
 ```
 
 
