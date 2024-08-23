@@ -86,5 +86,7 @@ while queue:
         degree[i] -= 1
         if degree[i] == 0:
             queue.append(i)
-
+# In the output case 2, the output from the code is 3,4,1,2.
+# even though we have different values from the case 2, it is okay
+# because in topological sorting, there are not unique answers. 
 ```
