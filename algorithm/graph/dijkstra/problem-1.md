@@ -1,4 +1,4 @@
-### [](https://www.acmicpc.net/problem/1916)
+### [Find the minimum cost](https://www.acmicpc.net/problem/1916)
 
 Difficulty : 
 
@@ -39,7 +39,9 @@ start_idnex, end_index = map(int, input().split())
 def dijkstra(start, end):
     pq = PriorityQueue()
     pq.put((0, start))
+
     dist[start] = 0
+    
     while pq.qsize() > 0:
         nowNode = pq.get()
         now = nowNode[1]
