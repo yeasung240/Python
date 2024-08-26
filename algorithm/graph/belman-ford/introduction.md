@@ -1,3 +1,13 @@
+# Belmna Ford
+>What is Belman Ford algorithm?
+
+The purpose is to find the shortest way to arrive at a certain point in the graph. 
+<br>The difference with dijkstra is Belman Ford includes the negative number weight on the graph. 
+<br>Also, It can determines if there is negtive cycle on the graph as it excutes the function again.
+
+[code example]()
+
+
 ```python
 import sys
 input = sys.stdin.readline
