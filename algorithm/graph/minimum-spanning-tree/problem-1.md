@@ -1,5 +1,5 @@
 [Minimum spanning tree](https://www.acmicpc.net/problem/1197)
-
+17472, 1414
 ```python
 import sys
 from queue import PriorityQueue
