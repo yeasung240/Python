@@ -1,41 +1,46 @@
 [Minimum spanning tree](https://www.acmicpc.net/problem/1197)
 17472, 1414
 ```python
-import sys
+# 1197 
+
 from queue import PriorityQueue
+V, E = map(int, input().split())
+edges = PriorityQueue()
+parent = [i for i in range(0, V+1)]
 
-input = sys.stdin.readline
-N, M = map(int, input().split())
-pq = PriorityQueue()
-parent = [0] * (N + 1)
-for i in range(N + 1):
-    parent[i] = i
+for _ in range(E):
+    s,e,w = map(int, input().split())
+    # PriorityQueue sorting based on the first number
+    edges.put((w,s,e))
 
-for i in range(M):
-    s, e, v = map(int, input().split())
-    pq.put((v, s, e))  # 제일 앞 순서로 정렬되므로 가중치를 제일 앞 순서로 함
+SUM = 0
+Repeat = 0
 
-def find(a):
-    if a == parent[a]:
-        return a
-    else:
-        parent[a] = find(parent[a])
-        return parent[a]
-
-def union(a, b):
+def union(a,b):
     a = find(a)
     b = find(b)
+    # If a == b, there is nothing to do. 
     if a != b:
-        parent[b] = a
+        if a > b:
+            parent[a] = b
+        elif a < b:
+            parent[b] = a
+    
+def find(c):
+    if c == parent[c]:
+        return c
+    else:
+        parent[c] = find(parent[c])
+        return parent[c]
+        
+while SUM < (V-1):
 
-useEdge = 0
-result = 0
-while useEdge < N - 1:  # MST는 한상 N-1의 에지를 사용함
-    v, s, e = pq.get()
-    if find(s) != find(e):  # 같은 부모가 아닌 경우만 연결
-        union(s, e)
-        result += v
-        useEdge += 1
+    w,s,e = edges.get() # output like input 
+    if find(s) != find(e):
+        union(s,e)
+        SUM += 1
+        Repeat += w
 
-print(result)
+
+print(Repeat)
 ```
