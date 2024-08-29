@@ -17,7 +17,8 @@ Starting from the first line, print the parent node number of each node in order
 
 >**IDEA**
 
-* first node is parent's node 
+* first node is parents' node 
+* Use DFS to find the parents'node
 
 >**How I solve it**
 
