@@ -32,10 +32,10 @@ myList = [[] for _ in range(V + 1)]
 q = PriorityQueue()
 
 for _ in range(E):
-    u, v, w = map(int, input().split())  # 가중치가 있는 인접 리스트 저장
+    u, v, w = map(int, input().split()) 
     myList[u].append((v, w))
 
-q.put((0, K))  # K를 시작점으로 설정
+q.put((0, K))  # Priority criteria is the length of the time 
 distance[K] = 0
 while q.qsize() > 0:
     current = q.get()
@@ -46,7 +46,7 @@ while q.qsize() > 0:
     for tmp in myList[c_v]:
         next = tmp[0]
         value = tmp[1]
-        if distance[next] > distance[c_v] + value:  # 최소 거리로 업데이트
+        if distance[next] > distance[c_v] + value:  # Update min value
             distance[next] = distance[c_v] + value
             q.put((distance[next], next))
 for i in range(1, V + 1):
